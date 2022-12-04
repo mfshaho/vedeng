@@ -6,6 +6,7 @@ import styles from '../styles';
 import { startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import Image from 'next/image';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -20,9 +21,11 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
+        <Image
           src="/body/Coding.svg"
           alt="get-started"
+          height={500}
+          width={500}
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
