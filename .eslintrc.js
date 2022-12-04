@@ -20,8 +20,8 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/no-unescaped-entities': "off",
-    "@next/next/no-page-custom-font": "off",
+    'react/no-unescaped-entities': 0,
+    "@next/next/no-page-custom-font": 0,
     'eslintreact/no-danger': 0,
     'react/jsx-max-props-per-line': 0,
     'react/jsx-first-prop-new-line': 0,
@@ -30,6 +30,7 @@ module.exports = {
     'no-nested-ternary': 0,
     'consistent-return': 0,
     'no-alert': 0,
+    'indent': 0,
     'react/jsx-no-constructed-context-values': 0,
     'import/extensions': 0,
     'react/prop-types': 0,

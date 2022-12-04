@@ -23,17 +23,17 @@ const Navbar = () => (
     <div
       className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
     >
-    <Image 
-      src="/icon/vedeng.svg"
+      <Image
+        src="/icon/vedeng.svg"
         alt="vedeng"
         width={60}
         height={60}
         className="w-[60px] h-[60px] object-contain cursor-pointer"
-    />
-    <Link href='/'>
-      <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white cursor-pointer">
-        vedeng.
-      </h2>
+      />
+      <Link href="/">
+        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white cursor-pointer">
+          vedeng.
+        </h2>
       </Link>
       <Image
         src="/menu.svg"

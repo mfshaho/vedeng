@@ -34,10 +34,10 @@ const Footer = () => (
             height={200}
             className="w-[24px] h-[24px] object-contain"
           />
-          <Link href='mailto:info@vedeng.cf'>
-          <span className="font-normal text-[16px] text-white">
-            Get in touch
-          </span>
+          <Link href="mailto:info@vedeng.cf">
+            <span className="font-normal text-[16px] text-white">
+              Get in touch
+            </span>
           </Link>
         </button>
       </div>
@@ -50,20 +50,19 @@ const Footer = () => (
             VEDENG
           </h4>
           <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2022 - 2023 VEDENG. All rights reserved. <br></br> Shah LLC
+            Copyright © 2022 - 2023 VEDENG. All rights reserved. <br /> Shah LLC
           </p>
 
           <div className="flex gap-4">
             {socials.map((social) => (
-              <Link href={social.link} target='_blank'>
-              <Image
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                width={500}
-                height={500}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
+              <Link key={social.name} href={social.link} target="_blank">
+                <Image
+                  src={social.url}
+                  alt={social.name}
+                  width={500}
+                  height={500}
+                  className="w-[24px] h-[24px] object-contain cursor-pointer"
+                />
               </Link>
             ))}
           </div>
