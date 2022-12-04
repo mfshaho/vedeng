@@ -22,9 +22,11 @@ const Footer = () => (
           Enter our world
         </h4>
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
+          <Image
             src="/icon/vedeng.svg"
             alt="vedeng"
+            width={200}
+            height={200}
             className="w-[24px] h-[24px] object-contain"
           />
           <Link href='mailto:info@vedeng.cf'>

@@ -34,9 +34,11 @@ const InsightCard = ({ imgUrl, title, url, subtitle, index }) => (
       href={url}
       target="_blank"
       >
-        <img
+        <Image
           src="/arrow.svg"
           alt="arrow"
+          width={250}
+          height={250}
           className="w-[100%] h-[100%] object-contain"
         />
       </Link>
