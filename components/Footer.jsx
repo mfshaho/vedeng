@@ -5,12 +5,14 @@ import { socials } from '../constants';
 import Image from 'next/image';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
+import Link from 'next/link';
 
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div className="footer-gradient" />
@@ -25,9 +27,11 @@ const Footer = () => (
             alt="vedeng"
             className="w-[24px] h-[24px] object-contain"
           />
+          <Link href='mailto:info@vedeng.cf'>
           <span className="font-normal text-[16px] text-white">
             Get in touch
           </span>
+          </Link>
         </button>
       </div>
 
@@ -44,6 +48,7 @@ const Footer = () => (
 
           <div className="flex gap-4">
             {socials.map((social) => (
+              <Link href={social.link} target='_blank'>
               <Image
                 key={social.name}
                 src={social.url}
@@ -52,6 +57,7 @@ const Footer = () => (
                 height={500}
                 className="w-[24px] h-[24px] object-contain cursor-pointer"
               />
+              </Link>
             ))}
           </div>
         </div>

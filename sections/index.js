@@ -7,6 +7,10 @@ import World from './World';
 import Work from './Work';
 import Feedback from './Feedback';
 
+import WebDev from './WebDev';
+import BackendDev from './BackendDev';
+import FrontendDev from './FrontendDev';
+
 export {
   Hero,
   About,
@@ -16,4 +20,8 @@ export {
   World,
   Work,
   Feedback,
+  
+  WebDev,
+  BackendDev,
+  FrontendDev,
 };

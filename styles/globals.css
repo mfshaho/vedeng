@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @import url('nordeco-font-family/font.main.css');
+@import url('f7-icons/framework7-icons.css');
+
 * {
   margin: 0;
   padding: 0;

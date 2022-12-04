@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image'
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
+import Link from 'next/link';
 
-const ExploreCard = ({ id, imgUrl, title, secs,index, active, handleClick }) => (
+const ExploreCard = ({ id, imgUrl, title, secs, path, index, active, handleClick }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -15,7 +16,7 @@ const ExploreCard = ({ id, imgUrl, title, secs,index, active, handleClick }) => 
   >
     <Image
       src={imgUrl}
-      alt="planet-04"
+      alt={path}
       width={500}
       height={500}
       className="absolute w-full h-full object-cover rounded-[24px]"
@@ -24,6 +25,7 @@ const ExploreCard = ({ id, imgUrl, title, secs,index, active, handleClick }) => 
       <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
         {title}
       </h3>
+      
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-[24px]">
         {/* <div
@@ -39,9 +41,12 @@ const ExploreCard = ({ id, imgUrl, title, secs,index, active, handleClick }) => 
           {secs[0]} <br></br> {secs[1]} <br></br> {secs[2]}
         </p>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
-          {title}
+          
+          <Link href={path} className='flex items-center'>{title}<i className='f7-icons ml-2.5 mt-2'>arrow_right_circle</i></Link>
         </h2>
       </div>
+
+      
     )}
   </motion.div>
 );
