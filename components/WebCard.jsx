@@ -1,9 +1,8 @@
-
-import Image from 'next/image'
+// NEXT.JS
+import Image from 'next/image';
 import Link from 'next/link';
 
 const WebCard = ({ id, iconUrl, name, location }) => (
-
   
     <Link href={location}>
     <div className='w-[250px] h-[250px] bg-blue-300 rounded-[12px] shadow-md flex flex-col justify-center cursor-pointer hover:bg-blue-200 hover:scale-105 transition-all duration-300'>

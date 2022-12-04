@@ -1,11 +1,16 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { socials } from '../constants';
+// NEXT.JS
 import Image from 'next/image';
-import styles from '../styles';
-import { footerVariants } from '../utils/motion';
 import Link from 'next/link';
+
+// FRAMER MOTION
+import { motion } from 'framer-motion';
+import { footerVariants } from '../utils/motion';
+
+// LOCAL DATA
+import { socials } from '../constants';
+import styles from '../styles';
 
 const Footer = () => (
   <motion.footer

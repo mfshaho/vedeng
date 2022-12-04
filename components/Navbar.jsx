@@ -1,10 +1,15 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
+// NEXT.JS
 import Image from 'next/image';
 import Link from 'next/link';
+
+// FRAMER MOTION
+import { motion } from 'framer-motion';
+import { navVariants } from '../utils/motion';
+
+// TAILWIND CSS
+import styles from '../styles';
 
 const Navbar = () => (
   <motion.nav
@@ -18,7 +23,6 @@ const Navbar = () => (
     <div
       className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
     >
-  
     <Image 
       src="/icon/vedeng.svg"
         alt="vedeng"

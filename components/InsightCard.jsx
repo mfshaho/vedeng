@@ -1,9 +1,12 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { fadeIn } from '../utils/motion';
+// NEXT.JS
 import Image from 'next/image';
+import Link from 'next/link';
+
+// FRAMER MOTION
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 const InsightCard = ({ imgUrl, title, url, subtitle, index }) => (
   <motion.div
