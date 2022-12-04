@@ -24,7 +24,7 @@ const Navbar = () => (
         className="w-[60px] h-[60px] object-contain"
     />
       <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-        vedeng
+        vedeng.
       </h2>
       <Image
         src="/menu.svg"
